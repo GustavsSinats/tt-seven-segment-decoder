@@ -1,20 +1,11 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+A case statement turns the four input bits into the pattern of segments to light, where a 1 lights a segment. There is no clock, so the display changes as soon as the input does.
 
 ## How to test
 
-Explain how to use your project
+Set ui[3:0] to a number from 0 to 15. Numbers 0 to 9 show as digits, and 10 to 15 show as A, b, C, d, E and F.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A common-cathode seven-segment display on uo[0] to uo[6], with a resistor on each segment.
